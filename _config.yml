@@ -3,7 +3,7 @@ title: 正宗菌吐槽贴吧
 description: 学生匿名反馈校园问题的平台
 
 # 基础配置（重要！）
-baseurl: "/shenjingqu"
+baseurl: ""
 url: "https://shenjingqu.github.io"
 
 # 不使用任何远程主题，让自定义样式生效
