@@ -39,6 +39,7 @@ title: 首页
     <p>反映占座、噪音、空调、开放时间、藏书等问题</p>
     <a href="/shenjingqu/library" class="btn">进入板块 →</a>
   </div>
+  
 </div>
 
 <div style="text-align: center; margin-top: 40px; padding: 20px; background: #e0e7ff; border-radius: 16px;">
