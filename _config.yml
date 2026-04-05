@@ -1,14 +1,18 @@
 # 网站标题
-title: 神经区校园反馈贴吧
-description: 学生匿名反馈校园问题的平台
+title: 校园反馈贴吧
+description: 反馈校园问题平台（不知道会不会被解决）
 
-# 基础配置
-baseurl: ""
-url: ""
+# 使用好看的主题（just-the-docs）
+remote_theme: just-the-docs/just-the-docs
 
-# 使用默认主题（让自定义CSS生效）
-theme: jekyll-theme-primer
+# 颜色主题
+color_scheme: dark
 
-# 让 assets/css/style.scss 生效
-sass:
-  style: compressed
+# 导航设置
+aux_links:
+  "GitHub仓库":
+    - "https://github.com/shenjingqu/shenjingqu"
+
+# 让首页显示内容
+search_enabled: false
+heading_anchors: false
