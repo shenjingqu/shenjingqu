@@ -4,8 +4,8 @@ title: 首页
 ---
 
 <div style="text-align: center; margin-bottom: 30px;">
-  <h2>🍄 欢迎来到正宗菌吐槽天地</h2>
-  <p style="color: #666;">文明发言，不得挂人、骂人、涉及黄赌毒</p>
+  <h2>🍄 欢迎来到正宗菌吐槽贴吧</h2>
+  <p style="color: #666;">网站为个人制作，请文明发言，不得挂人、骂人、涉及黄赌毒（吐槽完也不一定会改）</p>
 </div>
 
 <div class="card-grid">
