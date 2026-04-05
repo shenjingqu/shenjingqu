@@ -1,18 +1,14 @@
 # 网站标题
 title: 正宗菌吐槽贴吧
-description: 反馈校园问题平台（不知道会不会被解决）
+description: 学生匿名反馈校园问题的平台
 
-# 使用好看的主题（just-the-docs）
-remote_theme: just-the-docs/just-the-docs
+# 基础配置（重要！）
+baseurl: "/shenjingqu"
+url: "https://shenjingqu.github.io"
 
-# 颜色主题
-color_scheme: dark
+# 不使用任何远程主题，让自定义样式生效
+# remote_theme: 这行删掉或注释掉
 
-# 导航设置
-aux_links:
-  "GitHub仓库":
-    - "https://github.com/shenjingqu/shenjingqu"
-
-# 让首页显示内容
-search_enabled: false
-heading_anchors: false
+# 让自定义CSS生效
+sass:
+  style: compressed
