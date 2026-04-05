@@ -3,135 +3,198 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <title>{{ page.title }} | 正宗菌吐槽贴吧</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
-      background: #f5f5f5;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f0f2f5;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
     }
-    .header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    .header h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    .header p {
-      opacity: 0.9;
-    }
-    .nav {
-      background: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    /* 顶部导航栏 */
+    .navbar {
+      background: #2c3e50;
       padding: 12px 0;
       position: sticky;
       top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    .nav a {
-      color: #333;
-      text-decoration: none;
-      padding: 8px 20px;
-      margin: 0 5px;
-      border-radius: 20px;
-      transition: 0.3s;
-    }
-    .nav a:hover {
-      background: #667eea;
-      color: white;
-    }
-    .container {
+
+    .navbar .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 30px 20px;
+      padding: 0 20px;
     }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      margin-right: 10px;
+      border-radius: 8px;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .navbar a:hover {
+      background: #1abc9c;
+    }
+
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+      background: #e67e22;
+    }
+
+    .navbar .logo:hover {
+      background: #e67e22;
+      opacity: 0.9;
+    }
+
+    /* 主要内容区 */
+    .main-content {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* 卡片网格 */
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
       gap: 24px;
-      margin-top: 20px;
+      margin: 30px 0;
     }
+
+    /* 卡片样式 */
     .card {
       background: white;
       border-radius: 16px;
       padding: 24px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      cursor: pointer;
     }
+
     .card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-5px);
       box-shadow: 0 8px 24px rgba(0,0,0,0.15);
     }
+
     .card h3 {
       font-size: 24px;
       margin-bottom: 12px;
+      color: #2c3e50;
     }
+
     .card p {
       color: #666;
+      line-height: 1.6;
       margin-bottom: 16px;
-      line-height: 1.5;
     }
+
     .btn {
       display: inline-block;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: #1abc9c;
       color: white;
-      padding: 10px 24px;
-      border-radius: 30px;
+      padding: 8px 20px;
+      border-radius: 25px;
       text-decoration: none;
+      font-size: 14px;
       font-weight: 500;
       transition: 0.3s;
     }
+
     .btn:hover {
+      background: #16a085;
       transform: scale(1.02);
-      box-shadow: 0 4px 12px rgba(102,126,234,0.4);
     }
+
+    /* 提示框 */
+    .info-box {
+      background: #e8f8f5;
+      border-left: 4px solid #1abc9c;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    /* 页脚 */
     .footer {
-      background: #2d3748;
-      color: #a0aec0;
+      background: #2c3e50;
+      color: #95a5a6;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      margin-top: 50px;
     }
+
+    /* 板块详情页样式 */
+    .forum-post {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .forum-post h1 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    /* 评论区占位 */
+    .comments-section {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin-top: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
     @media (max-width: 768px) {
       .card-grid {
         grid-template-columns: 1fr;
       }
-      .nav a {
-        display: inline-block;
-        margin: 5px;
-        font-size: 14px;
+      .navbar a {
         padding: 6px 12px;
+        font-size: 14px;
+      }
+      .forum-post {
+        padding: 20px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>🍄 正宗菌吐槽贴吧</h1>
-    <p>{{ site.description }}</p>
-  </div>
-  
-  <div class="nav" style="text-align: center;">
-    <a href="/shenjingqu/">🏠 首页</a>
-    <a href="/shenjingqu/canteen">🍚 食堂</a>
-    <a href="/shenjingqu/dorm">🏠 宿舍</a>
-    <a href="/shenjingqu/teaching">📖 教学楼</a>
-    <a href="/shenjingqu/sports">⚽ 运动场</a>
-    <a href="/shenjingqu/library">📚 图书馆</a>
-  </div>
-  
+
+<!-- 导航栏 -->
+<div class="navbar">
   <div class="container">
-    {{ content }}
+    <a href="/shenjingqu/" class="logo">🍄 正宗菌吐槽贴吧</a>
+    <a href="/shenjingqu/canteen">🍚 食堂区</a>
+    <a href="/shenjingqu/dorm">🏠 宿舍区</a>
+    <a href="/shenjingqu/teaching">📖 教学楼区</a>
+    <a href="/shenjingqu/sports">⚽ 运动场区</a>
+    <a href="/shenjingqu/library">📚 图书馆区</a>
   </div>
-  
-  <div class="footer">
-    <p>© 2025 正宗菌吐槽贴吧 | 文明发言，共建美好校园</p>
-  </div>
+</div>
+
+<!-- 主要内容 -->
+<div class="main-content">
+  {{ content }}
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+  <p>© 2024 正宗菌吐槽贴吧 | 文明发言，共建美好校园 | 需要 GitHub 账号登录后才能留言</p>
+</div>
+
 </body>
 </html>
