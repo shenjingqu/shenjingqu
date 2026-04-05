@@ -3,10 +3,9 @@ layout: default
 title: 首页
 ---
 
-<div style="text-align: center; margin-bottom: 40px;">
-  <p style="font-size: 18px; color: #555;">
-    文明发言，共建美好校园 | 不得挂人、骂人、涉及黄赌毒
-  </p>
+<div style="text-align: center; margin-bottom: 30px;">
+  <h2>🍄 欢迎来到正宗菌吐槽天地</h2>
+  <p style="color: #666;">文明发言，不得挂人、骂人、涉及黄赌毒</p>
 </div>
 
 <div class="card-grid">
@@ -39,10 +38,9 @@ title: 首页
     <p>反映占座、噪音、空调、开放时间、藏书等问题</p>
     <a href="/shenjingqu/library" class="btn">进入板块 →</a>
   </div>
-  
 </div>
 
-<div style="text-align: center; margin-top: 40px; padding: 20px; background: #e0e7ff; border-radius: 16px;">
+<div class="info-box">
   <p>💡 点击板块进入后，在页面下方评论区留言反馈</p>
-  <p style="font-size: 14px; color: #4a5568;">需要 GitHub 账号登录后才能留言</p>
+  <p style="font-size: 14px; margin-top: 10px;">需要 GitHub 账号登录后才能留言</p>
 </div>
