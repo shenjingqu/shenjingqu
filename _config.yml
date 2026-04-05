@@ -1,0 +1,10 @@
+# 网站标题
+title: 神经区校园反馈贴吧
+description: 学生匿名反馈校园问题的平台
+
+# 基础URL（保持这样）
+baseurl: ""
+url: ""
+
+# 选择一个好看的主题（先这样配置，后面会更好看）
+theme: jekyll-theme-minimal
