@@ -33,13 +33,6 @@ title: 首页
     <a href="/sports" class="btn">进入板块 →</a>
   </div>
   
-  <div class="card">
-    <h3>📚 图书馆区</h3>
-    <p>反映占座、噪音、空调、开放时间、藏书等问题</p>
-    <a href="/library" class="btn">进入板块 →</a>
-  </div>
-</div>
-
 <div class="info-box">
   <p>💡 点击板块进入后，在页面下方评论区留言反馈</p>
   <p style="font-size: 14px; margin-top: 10px;">需要 GitHub 账号登录后才能留言</p>
