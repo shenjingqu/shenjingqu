@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #f5f5f5;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .header p {
+      opacity: 0.9;
+    }
+    .nav {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+    }
+    .nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 8px 20px;
+      margin: 0 5px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+    .nav a:hover {
+      background: #667eea;
+      color: white;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .card p {
+      color: #666;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 10px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(102,126,234,0.4);
+    }
+    .footer {
+      background: #2d3748;
+      color: #a0aec0;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+        padding: 6px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🧠 {{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </div>
+  
+  <div class="nav" style="text-align: center;">
+    <a href="/shenjingqu/">🏠 首页</a>
+    <a href="/shenjingqu/canteen">🍚 食堂</a>
+    <a href="/shenjingqu/dorm">🏠 宿舍</a>
+    <a href="/shenjingqu/teaching">📖 教学楼</a>
+    <a href="/shenjingqu/sports">⚽ 运动场</a>
+    <a href="/shenjingqu/library">📚 图书馆</a>
+  </div>
+  
+  <div class="container">
+    {{ content }}
+  </div>
+  
+  <div class="footer">
+    <p>© 2024 神经区校园反馈贴吧 | 文明发言，共建美好校园</p>
+  </div>
+</body>
+</html>
