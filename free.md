@@ -12,19 +12,19 @@ title: 自由讨论区
 </div>
 
 <div class="comments-section">
-  <script src="https://giscus.app/client.js"
+<script src="https://giscus.app/client.js"
         data-repo="shenjingqu/shenjingqu"
-        data-repo-id="R_kgDONpaPmA"
+        data-repo-id="R_kgDOR6D7Ww"
         data-category="Announcements"
-        data-category-id="DIC_kwDONpaPnM4ClN_d"
+        data-category-id="DIC_kwDOR6D7W84C6FD_"
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="noborder_light"
+        data-theme="preferred_color_scheme"
         data-lang="zh-CN"
         crossorigin="anonymous"
         async>
-  </script>
+</script>
 </div>
