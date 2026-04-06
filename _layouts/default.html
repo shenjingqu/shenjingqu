@@ -215,7 +215,6 @@
 
 <script>
   const quotes = [
-    '💡 吐槽完也不一定会改，但一定要吐！',
     '🍄 你今天吐槽了吗？',
     '📢 文明发言，不要骂人~',
     '🔧 反馈问题请写清楚地点和时间',
@@ -235,6 +234,22 @@
 <div class="footer">
   <p>© 2024 正宗菌吐槽贴吧 | 文明发言，共建美好校园 | 需要 GitHub 账号登录后才能留言</p>
 </div>
+  
+<!-- 欢迎提示条 -->
+<div id="welcomeToast" style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #1abc9c; color: white; padding: 12px 24px; border-radius: 30px; z-index: 1000; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: none;">
+  🍄 欢迎来到正宗菌吐槽贴吧！文明发言~
+</div>
 
+<script>
+  // 显示欢迎提示
+  const toast = document.getElementById('welcomeToast');
+  if (toast) {
+    toast.style.display = 'block';
+    setTimeout(function() {
+      toast.style.display = 'none';
+    }, 3000);  // 3000毫秒 = 3秒后自动消失
+  }
+</script>
+  
 </body>
 </html>
