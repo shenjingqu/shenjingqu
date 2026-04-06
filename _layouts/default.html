@@ -12,6 +12,27 @@
       box-sizing: border-box;
     }
 
+    <!-- 看板娘 -->
+<div style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; z-index: 999;" id="mascot">
+  <div style="background: #1abc9c; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+    🍄
+  </div>
+  <div id="speech" style="position: absolute; bottom: 70px; right: 0; background: white; border-radius: 16px; padding: 8px 12px; font-size: 12px; white-space: nowrap; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: none;">
+    戳我干嘛👀
+  </div>
+</div>
+
+<script>
+  const mascot = document.getElementById('mascot');
+  const speech = document.getElementById('speech');
+  const messages = ['文明发言哦🍄', '吐槽完也不一定会改😏', '注册GitHub就能留言啦', '今天你吐槽了吗', '戳我干嘛👀'];
+  mascot.onclick = function() {
+    speech.style.display = 'block';
+    speech.innerText = messages[Math.floor(Math.random() * messages.length)];
+    setTimeout(() => { speech.style.display = 'none'; }, 2000);
+  };
+</script>
+                      
     body {
       background: #f0f2f5;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
